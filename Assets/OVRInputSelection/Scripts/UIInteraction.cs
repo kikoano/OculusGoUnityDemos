@@ -50,6 +50,6 @@ public class UIInteraction : MonoBehaviour {
 	}
 
     public void OnBackToMenu() {
-        SceneManager.LoadScene("main", LoadSceneMode.Single);
+        SceneManager.LoadScene("test", LoadSceneMode.Single);
     }
 }

@@ -34,3 +34,5 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+Assets/Oculus/SampleFramework/Core/TouchControllers/Models/controller_NM.psd

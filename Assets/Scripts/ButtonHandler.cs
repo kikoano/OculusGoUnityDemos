@@ -15,6 +15,10 @@ public class ButtonHandler : MonoBehaviour
     {
         SceneManager.LoadScene("TeleportDemo");
     }
+    public void TestInteraction()
+    {
+        SceneManager.LoadScene("Interaction");
+    }
     public void BackToMenu()
     {
         SceneManager.LoadScene("test");
