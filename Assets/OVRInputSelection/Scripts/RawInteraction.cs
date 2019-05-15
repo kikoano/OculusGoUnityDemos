@@ -60,11 +60,17 @@ public class RawInteraction : MonoBehaviour {
         }
         Debug.Log("Clicked on " + t.gameObject.name);
 
-        AudioSource audioData = t.gameObject.GetComponent<AudioSource>();
-        audioData.Play(0);
-
         if (outText != null) {
             outText.text = "<b>Last Interaction:</b>\nClicked On:" + t.gameObject.name;
+        }
+
+        AudioSource audioData = t.gameObject.GetComponent<AudioSource>();
+        audioData.Play(0);
+        if (t.gameObject.tag == "Point")
+        {
+            AudioSource.PlayClipAtPoint(audioData.clip, t.position);
+            GameObject.Find("Points").GetComponent<Points>().addPoint();
+            Destroy(t.gameObject);
         }
     }
 }
