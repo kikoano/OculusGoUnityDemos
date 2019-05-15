@@ -17,7 +17,7 @@ public class ButtonHandler : MonoBehaviour
     }
     public void TestInteraction()
     {
-        SceneManager.LoadScene("Interaction");
+        SceneManager.LoadScene("SpatialAudioTest");
     }
     public void BackToMenu()
     {

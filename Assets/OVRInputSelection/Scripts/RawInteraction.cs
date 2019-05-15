@@ -59,6 +59,10 @@ public class RawInteraction : MonoBehaviour {
             SceneManager.LoadScene("main", LoadSceneMode.Single);
         }
         Debug.Log("Clicked on " + t.gameObject.name);
+
+        AudioSource audioData = t.gameObject.GetComponent<AudioSource>();
+        audioData.Play(0);
+
         if (outText != null) {
             outText.text = "<b>Last Interaction:</b>\nClicked On:" + t.gameObject.name;
         }

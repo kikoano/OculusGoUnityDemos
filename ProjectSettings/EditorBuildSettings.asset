@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TeleportDemo.unity
     guid: 8c00a4185524fb34ea1cad44b538479c
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/SpatialAudioTest.unity
+    guid: 95ed5839ab78f7b478b8d905e56fed5e
   m_configObjects: {}
